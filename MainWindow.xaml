@@ -1,0 +1,54 @@
+﻿<Window x:Class="Wpf_Math_practice7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Math_practice7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ComboBox x:Name="TaskComboBox" Grid.Row="0" Margin="10" SelectionChanged="TaskComboBox_SelectionChanged">
+            <ComboBoxItem Content="Задача 1: Сравнение суммы квадратов и квадрата суммы"/>
+            <ComboBoxItem Content="Задача 2: Расчет надбавки к зарплате"/>
+            <ComboBoxItem Content="Задача 3: Определение наиболее удаленной точки"/>
+            <ComboBoxItem Content="Задача 4: Проверка, является ли треугольник прямоугольным"/>
+            <ComboBoxItem Content="Задача 5: Возведение положительных чисел в квадрат"/>
+            <ComboBoxItem Content="Задача 6: Определение четверти точки"/>
+            <ComboBoxItem Content="Задача 7: Проверка, лежит ли точка внутри окружности"/>
+            <ComboBoxItem Content="Задача 8: Определение треугольника с наибольшей площадью"/>
+            <ComboBoxItem Content="Задача 9: Сравнение площади квадрата и окружности"/>
+            <ComboBoxItem Content="Задача 10: Возведение положительных чисел в куб"/>
+            <ComboBoxItem Content="Задача 11: Проверка числа на четность или окончание на 3"/>
+            <ComboBoxItem Content="Задача 12: Проверка, лежит ли точка в первой четверти"/>
+            <ComboBoxItem Content="Задача 13: Расчет суммы ежемесячных выплат по депозиту"/>
+            <ComboBoxItem Content="Задача 14: Сравнение разности квадратов и модуля квадрата разности"/>
+            <ComboBoxItem Content="Задача 15: Определение наименее удаленной точки"/>
+            <ComboBoxItem Content="Задача 16: Проверка, лежит ли точка внутри тора"/>
+            <ComboBoxItem Content="Задача 17: Проверка, лежит ли точка в четвертой четверти"/>
+            <ComboBoxItem Content="Задача 18: Проверка, является ли треугольник равнобедренным"/>
+            <ComboBoxItem Content="Задача 19: Проверка, являются ли числа тройкой Пифагора"/>
+            <ComboBoxItem Content="Задача 20: Сравнение объемных скоростей переноса жидкости"/>
+            <ComboBoxItem Content="Задача 21: Проверка, уместится ли круг в квадрате и наоборот"/>
+            <ComboBoxItem Content="Задача 22: Определение материала с большей плотностью"/>
+            <ComboBoxItem Content="Задача 23: Сравнение скоростей"/>
+            <ComboBoxItem Content="Задача 24: Проверка, уместится ли круг в треугольнике и наоборот"/>
+            <ComboBoxItem Content="Задача 25: Определение участка с меньшим током"/>
+            <ComboBoxItem Content="Задача 26: Определение планеты с наибольшим ускорением силы тяжести"/>
+            <ComboBoxItem Content="Задача 27: Определение времени суток"/>
+            <ComboBoxItem Content="Задача 28: Определение полушария"/>
+            <ComboBoxItem Content="Задача 29: Определение, какая звезда находится дальше"/>
+            <ComboBoxItem Content="Задача 30: Проверка числа на четность или окончание на 7"/>
+        </ComboBox>
+
+        <StackPanel x:Name="TaskPanel" Grid.Row="1" Margin="10">
+        </StackPanel>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock Text="praktik 7:" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
